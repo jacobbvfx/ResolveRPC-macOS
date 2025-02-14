@@ -1,6 +1,6 @@
 # ResolveRPC-macOS
 It works only with **DaVinci Resolve Studio** and only on **macOS** because it uses **Resolve Scriping API** and **macOS specific paths**. 
-Make sure you have scriping enabled inside `Preferences > General > General > External scripting using: Local`.
+Make sure you have scripting enabled inside `Preferences > General > General > External scripting using: Local`.
 
 ## Preview
 ![alt text](https://i.imgur.com/MADrkkt.png "Rich Presence")
