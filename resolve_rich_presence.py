@@ -31,9 +31,10 @@ def get_resolve():
         try:
             resolve = dvr.scriptapp("Resolve")
             if resolve:
+                print("Connected to DaVinci Resolve.")
                 return resolve
-        except:
-            print("Could not connect to DaVinci Resolve. Retrying...")
+        except Exception as e:
+            print(f"Could not connect to DaVinci Resolve: {e}. Retrying...")
             time.sleep(5)
 
 def get_project_info(resolve):
@@ -60,12 +61,14 @@ def update_presence(rpc, resolve):
             rpc.clear()
             wait_for_process("resolve")
             resolve = get_resolve()
+            start_time = int(time.time())  # Reset start time on Resolve restart
 
         try:
             project, project_name, timeline_name = get_project_info(resolve)
         except AttributeError:
             print("Failed to get project info. Retrying...")
             resolve = get_resolve()
+            start_time = int(time.time())  # Reset start time on Resolve reconnect
             continue
 
         if not project:
