@@ -6,6 +6,8 @@ Make sure you have scripting enabled inside `Preferences > General > General > E
 ![alt text](https://i.imgur.com/MADrkkt.png "Rich Presence")
 
 ## How to use it?
+Just download the app from [Releases](https://github.com/jacobbvfx/ResolveRPC-macOS/releases) page and move it to /Applications folder.
+<!-- ## How to use it?
 ```bash
 git clone https://github.com/jacobbvfx/ResolveRPC-macOS.git
 
@@ -19,12 +21,10 @@ python3 resolve_rich_presence.py
 ## How to use it headlessly (in background)?
 ```bash
 nohup python3 resolve_rich_presence.py &
-```
+``` -->
+
 ## Will I ever make Windows or Linux version?
 For some people this older project works on **Windows** [ResolveRPC](https://github.com/jacobbvfx/ResolveRPC) (it's very buggy).
-
-## Will there ever be GUI or .app file?
-Maybe.
 
 ## License
 [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
